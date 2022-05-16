@@ -142,6 +142,7 @@ class db():
 
 
 
+
     def __iter__(self):
         """
         迭代器，遍历case
@@ -156,6 +157,11 @@ class db():
         读取yaml文件
         :return:
         """
+        with open('Cps.yaml', 'r', encoding='utf-8') as f:
+            file_content = f.read()
+        content = yaml.load(file_content, yaml.FullLoader)
+        print(content)
+
 
 if __name__ == '__main__':
     file_path = r'C:/Users/DELL/Desktop/yongli.xlsx'

@@ -6,7 +6,7 @@ import pytest
 
 if __name__ == "__main__":
     result_dir  = 'report/test_report.html'
-    pytest.main(['-s','-v','--html=%s'%result_dir,'--capture=sys','yongli/test1.py','-m','app'])
+    pytest.main(['-s','-v','--html=%s'%result_dir,'--capture=sys','yongli/lianxi.py::TestCase01::test_1'])
     # ret = os.system('allure generate --clean %s -o %s'%(result_dir,report))
     # os.system("allure generate ../report/tmp -o ../report/report --clean")
     #
